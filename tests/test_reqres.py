@@ -13,7 +13,7 @@ url = "https://reqres.in/api/users"
 
 
 def file_path(file_name):
-    return str(Path(tests.__file__).parent.parent.joinpath(f'resources/{file_name}').absolute())
+    return str(Path(tests.__file__).parent.parent.joinpath(f'schemas/{file_name}').absolute())
 
 
 def test_api():
