@@ -23,6 +23,7 @@ def reqres_api_get(endpoint, **kwargs):
 
     return result
 
+
 def file_path(file_name):
     return str(Path(tests.__file__).parent.parent.joinpath(f'schemas/{file_name}').absolute())
 
@@ -65,5 +66,3 @@ def test_list_of_users_per_page():
 
     assert response.json()['per_page'] == per_page
     assert len(response.json()['data']) == per_page
-
-
